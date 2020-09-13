@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.cardsWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.headerTable {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #0972b9;
+  border: 2px solid #0972b9;
+  border-radius: 5px;
+}
+
+.buttonCard {
+  color: #fff;
+  background-color: #0972b9;
+  margin: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.buttonCard:hover,
+.buttonCard:focus {
+  background-color: #075488;
+  border-color: #064e7f;
+}
+
+.buttonCard__save {
+  padding-left: 25px;
+  padding-right: 26px;
+}
+
+.cardСreator {
+  padding: 38px 0;
+  background-color: rgb(246, 246, 246);
+}
+
+.cardCreator-title {
+  margin: 0 0 28px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cardCreator-wrap {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cardCreator-input {
+  width: 100%;
+  display: block;
+  margin-bottom: 14px;
+  padding: 0.91rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.cardCreator-input::placeholder {
+  color: rgb(160, 162, 164);
+}
+.cardCreator-input:focus {
+  color: #55595c;
+  background-color: #fff;
+  border-color: #66afe9;
+  outline: none;
+}
+
+.edit-input {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  border: 1px solid#66afe9;
+}
+
+.edit-input::placeholder {
+  color: rgb(160, 162, 164);
+}
+.edit-input:focus {
+  color: #55595c;
+  background-color: #fff;
+  border-color: #66afe9;
+  outline: none;
+}
+
+.cardСreator-submit {
+  width: 100%;
+  height: 51px;
+  color: #fff;
+  background-color: rgb(9, 114, 185);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.cardСreator-submit:hover,
+.cardСreator-submit:focus {
+  background-color: #075488;
+  border-color: #064e7f;
+}
+
+.notification {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #fff;
+  color: #f4a03e;
+  border: 2px solid #0972b9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(59, 116, 168, 0.2);
+}

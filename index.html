@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Glievoy-Phonebook</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="cardsWrap">
+      <table cellpadding="10px" cellspacing="1px">
+        <thead>
+          <th><p class="headerTable">Имя</p></th>
+          <th><p class="headerTable">Телефон</p></th>
+        </thead>
+        <tbody id="listPeople"></tbody>
+      </table>
+    </div>
+    <form class="cardСreator">
+      <h2 class="cardCreator-title">СОЗДАТЬ КАРТОЧКУ</h2>
+      <div class="cardCreator-wrap">
+        <input
+          class="cardCreator-input"
+          type="text"
+          required
+          name="name"
+          placeholder="Имя"
+        />
+        <input
+          class="cardCreator-input"
+          type="tel"
+          name="tel"
+          placeholder="Телефон"
+        />
+        <button type="submit" class="cardСreator-submit">ДОБАВИТЬ</button>
+      </div>
+    </form>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
